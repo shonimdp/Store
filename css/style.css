@@ -1,0 +1,153 @@
+/* Estilos base */
+body {
+  color: #ffffff; /* Color blanco para el texto */
+  background-image: url("../img/wallpaper2880x1800.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0; /* Eliminar margen predeterminado del cuerpo */
+  padding: 0; /* Eliminar relleno predeterminado del cuerpo */
+}
+
+.container {
+  text-align: center;
+  padding: 0px;
+  margin-left: 50px;
+}
+.titulo {
+  text-align: center;
+  padding: 0px;
+  margin-left: 50px;
+}
+h1 {
+  margin-top: 50px;
+  font-family: 'Koulen', sans-serif;
+  font-size: 60px;
+}
+
+.outer-square {
+  display: inline-block;
+  border: 0.1px solid #ffffff; /* Color blanco */
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0 10px; /* Margen izquierdo y derecho ajustado */
+  float: left;
+}
+
+.inner-square {
+  position: relative;
+
+}
+
+.weapon-name {
+  text-align: center;
+  margin-top: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #ffffff; /* Color blanco */
+  margin-bottom: 20px; /* Espacio en la parte inferior para el texto */
+}
+/*==================ACA SE AGREGAN LAS FOTOS DEL ARMA============================*/
+.square-1{
+  background-image: url("../stock/M4A4-EvilDaimyo.png");
+}
+.square-2{
+  background-image: url("../stock/M4A1-S-Emphorosaur-S.png");
+}
+.square-3{
+  background-image: url("../stock/M4A1-S-Nitro.png");
+}
+.square-4{
+  background-image: url("../stock/AWP-SunInLeo.png");
+}
+/*ACA SE AGREGAN LAS CARACTERISTICAS DE LAS CAJAS*/
+
+.square-1, .square-2,
+.square-3,
+.square-4 {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1); /* Color blanco con 50% de transparencia */
+  margin: 0px;
+  display: inline-block;
+  border-radius: 10px; /* Valor de radio para las esquinas */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease; /* Transición de animación */ 
+}
+/*==================ACA SE AGREGAN LOS CUADRADOS============================*/
+.square-1:hover {
+  transform: scale(1.02); /* Aumento de escala al pasar el mouse por encima */
+}
+.square-2:hover {
+  transform: scale(1.02); /* Aumento de escala al pasar el mouse por encima */
+}
+.square-3:hover {
+  transform: scale(1.02); /* Aumento de escala al pasar el mouse por encima */
+}
+.square-4:hover {
+  transform: scale(1.02); /* Aumento de escala al pasar el mouse por encima */
+}
+
+
+.button {
+  display: block;
+  margin-top: 10px;
+  margin-left: 3px;
+  transition: transform 0.2s ease; /* Transición de animación */
+}
+
+.button:hover {
+  transform: scale(1.02); /* Aumento de escala al pasar el mouse por encima */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  /* Estilos modificados para dispositivos móviles */
+}
+
+/* Estilos para la modal */
+.modal {
+  display: none;
+}
+
+.modal-image {
+  width: 480px;
+  height: 700px;
+}
+/*==================ACA SE AGREGAN LOS CUADRADOS============================*/
+.square-1, .square-2,.square-3, .square-4 {
+  position: relative;
+}
+
+.inspect-button {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  font-size: 12px;
+  padding: 2px 2px;
+}
+
+.price {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #cda434;
+  font-family: 'PT Sans', sans-serif;
+
+}
+.tipo-weapon-FT{
+color: #ff8000;
+font-family: 'PT Sans', sans-serif;
+margin-top: 5px;
+text-align: center;
+}
+.tipo-weapon-MW{
+  color: green;
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 5px;
+  text-align: center;
+  }

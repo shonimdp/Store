@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> <!-- Agrega este enlace -->
+  <title>Skin Shop Argentina</title>
+</head>
+<body>
+  <div class="titulo">
+    <h1>Mirror Skins shop</h1>
+  </div>
+  <!-- COMIENZO DE CAJA 1 -->
+  <div class="container">
+    <div class="detalles">
+      <div class="outer-square">
+        <div class="inner-square square-1" id="square-1">
+          <span class="price">$1500</span>
+          <button class="button" onclick="openWindow('detalles/M4A4-Evil-Daimyo-Field-Tested.jpg')">Comprar</button>
+          <button class="inspect-button" onclick="toggleModal('detalles/M4A4-Evil-Daimyo-Field-Tested.jpg')">Inspeccionar</button>
+        </div>
+        <p class="tipo-weapon-FT">Field-Tested</p>
+        <p class="weapon-name">M4A4 | Evil Daimyo</p>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="modal-close" class="close hidden" onclick="closeWindow()">&times;</span>
+          <button id="modal-close-button" class="modal-close-button hidden" onclick="closeWindow()">Cerrar</button>
+          <p id="modal-message" class="modal-message hidden"></p>
+          <img id="modal-image" class="modal-image" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- COMIENZO CAJA 2 -->
+  <div class="detalles">
+    <div class="outer-square">
+      <div class="inner-square square-2" id="square-2">
+        <span class="price">$2500</span>
+        <button class="button" onclick="openWindow('detalles/M4A1-Emphorosaur.jpg')">Comprar</button>
+        <button class="inspect-button" onclick="toggleModal('detalles/M4A1-Emphorosaur.jpg')">Inspeccionar</button>
+      </div>
+      <p class="tipo-weapon-FT">Field-Tested</p>
+      <p class="weapon-name">M4A1-S Emphorosaur</p>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="modal-close" class="close hidden" onclick="closeWindow()">&times;</span>
+        <button id="modal-close-button" class="modal-close-button hidden" onclick="closeWindow()">Cerrar</button>
+        <p id="modal-message" class="modal-message hidden"></p>
+        <img id="modal-image" class="modal-image" src="" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- TERMINA CAJA -->
+  <!-- COMIENZO CAJA 3 -->
+  <div class="detalles">
+    <div class="outer-square">
+      <div class="inner-square square-3" id="square-3">
+        <span class="price">$2800</span>
+        <button class="button" onclick="openWindow('detalles/M4A1-S-Nitro.jpg')">Comprar</button>
+        <button class="inspect-button" onclick="toggleModal('detalles/M4A1-S-Nitro.jpg')">Inspeccionar</button>
+      </div>
+      <p class="tipo-weapon-MW">Minimal Wear</p>
+      <p class="weapon-name">M4A1-S | Nitro</p>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="modal-close" class="close hidden" onclick="closeWindow()">&times;</span>
+        <button id="modal-close-button" class="modal-close-button hidden" onclick="closeWindow()">Cerrar</button>
+        <p id="modal-message" class="modal-message hidden"></p>
+        <img id="modal-image" class="modal-image" src="" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- TERMINA CAJA -->
+    <!-- COMIENZO CAJA 4 -->
+    <div class="detalles">
+      <div class="outer-square">
+        <div class="inner-square square-4" id="square-4">
+          <span class="price">$2500</span>
+          <button class="button" onclick="openWindow('detalles/AWP-Sun-in-Leo.jpg')">Comprar</button>
+          <button class="inspect-button" onclick="toggleModal('detalles/AWP-Sun-in-Leo.jpg')">Inspeccionar</button>
+        </div>
+        <p class="tipo-weapon-MW">Minimal Wear</p>
+        <p class="weapon-name">AWP | Sun in Leo</p>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="modal-close" class="close hidden" onclick="closeWindow()">&times;</span>
+          <button id="modal-close-button" class="modal-close-button hidden" onclick="closeWindow()">Cerrar</button>
+          <p id="modal-message" class="modal-message hidden"></p>
+          <img id="modal-image" class="modal-image" src="" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- TERMINA CAJA -->
+  <script src="javascript.js"></script>
+</body>
+</html>
